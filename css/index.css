@@ -1,0 +1,192 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    background-color: #fff;
+}
+
+/* 修改 container 最大宽度 1280/1080，根据设计稿*/
+@media screen and (min-width: 1080px) {
+    .container {
+        width: 1080px;
+    }
+}
+
+/* header */
+header {
+    padding-left: 0 !important;
+}
+.logo {
+    background-color: #409ad7;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    /* width: 100%; */
+    max-width: 100%;
+}
+
+/* 超小屏幕，logo图片隐藏 */
+/* 准备好盒子，超小屏幕显示 */
+.logo span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.nav {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+.nav a::before {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+/* 进入小屏幕以及超小屏幕时，nav里面的li浮动，且宽度为20% */
+@media screen and (max-width: 991px) {
+    .nav li {
+        float: left;
+        width: 20%;
+    }
+    header {
+        padding-right: 0 !important;
+    }
+    aside {
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+    }
+}
+/* 进入超小屏幕，字体变小 */
+@media screen and (max-width: 767px) {
+    .nav li a {
+        font-size: 14px;
+        padding-left: 3px;
+    }
+    article {
+        margin-top: 10px;
+    }
+    /* 当进入超小屏幕。第一个li 100%，其他50% */
+    .news li:nth-child(1) {
+        width: 100% !important;
+    }
+    .news li {
+        width: 50% !important;
+    }
+    /* .publish标题字号变小 */
+    .publish h3 {
+        font-size: 14px;
+    }
+}
+
+/* 新闻 */
+.news li {
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.news li:nth-child(1) {
+    width: 50%;
+    height: 266px;
+}
+
+.news li:nth-child(1) p {
+    line-height: 41px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.news li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.news li a img {
+    width: 100%;
+    height: 100%;
+}
+
+.news li a p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    font-size: 12px;
+    color: #fff;
+}
+
+.publish {
+    border-top: 1px solid #ccc;
+}
+
+.pic {
+    margin-top: 10px;
+}
+
+.pic img {
+    width: 100%;
+}
+
+.publish .row {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.banner img  {
+    width: 100%;
+}
+
+.hot {
+    display: block;
+    margin-top: 20px;
+    padding: 0 20px 20px;
+    border: 1px solid #ccc;
+}
+
+.hot span {
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.hot p {
+    font-size: 12px;
+}
+
