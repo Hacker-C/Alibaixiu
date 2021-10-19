@@ -18,9 +18,12 @@ a:hover {
 }
 
 /* 修改 container 最大宽度 1280/1080，根据设计稿*/
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
     .container {
-        width: 1080px;
+        width: 1280px;
+    }
+    .right-nav .nav a {
+        /* padding: 10px 30px; */
     }
 }
 
@@ -53,6 +56,7 @@ header {
 .nav {
     background-color: #eee;
     border-bottom: 1px solid #ccc;
+    /* padding: 0 20px; */
 }
 
 .nav a {
@@ -98,9 +102,16 @@ header {
     /* 当进入超小屏幕。第一个li 100%，其他50% */
     .news li:nth-child(1) {
         width: 100% !important;
+        padding-right: 0;
     }
     .news li {
         width: 50% !important;
+
+    }
+    .news li:nth-child(3),
+    .news li:nth-child(5) {
+        padding-right: 0 !important;
+        
     }
     /* .publish标题字号变小 */
     .publish h3 {
@@ -168,6 +179,12 @@ header {
 .publish .row {
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
+    margin-left: 0 !important;
+}
+
+.row {
+    /* margin-left: 0 !important; */
+
 }
 
 .banner img  {
@@ -188,5 +205,16 @@ header {
 
 .hot p {
     font-size: 12px;
+}
+
+/* 右下tab栏切换 */
+.tablist-box {
+    margin-top: 10px;
+}
+
+/* 分页居中 */
+.pagination {
+    display: flex;
+    justify-content: center;
 }
 
