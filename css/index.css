@@ -22,9 +22,6 @@ a:hover {
     .container {
         width: 1280px;
     }
-    .right-nav .nav a {
-        /* padding: 10px 30px; */
-    }
 }
 
 /* header */
@@ -182,11 +179,6 @@ header {
     margin-left: 0 !important;
 }
 
-.row {
-    /* margin-left: 0 !important; */
-
-}
-
 .banner img  {
     width: 100%;
 }
@@ -218,3 +210,6 @@ header {
     justify-content: center;
 }
 
+.code {
+    margin-top: 10px;
+}
